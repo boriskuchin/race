@@ -5,7 +5,22 @@ import java.util.Arrays;
 
 public class Race {
     private ArrayList<Stage> stages;
-    public ArrayList<Stage> getStages() { return stages; }
+
+    private boolean hasWinner;
+
+    public ArrayList<Stage> getStages() {
+        return stages;
+    }
+
+    public void setHasWinner() {
+        this.hasWinner = true;
+
+    }
+
+    public boolean isHasWinner() {
+        return hasWinner;
+    }
+
     public Race(Stage... stages) {
         this.stages = new ArrayList<>(Arrays.asList(stages));
     }
